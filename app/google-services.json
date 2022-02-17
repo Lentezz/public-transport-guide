@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "21169751859",
+    "firebase_url": "https://public-transport-guide-5a729-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "public-transport-guide-5a729",
+    "storage_bucket": "public-transport-guide-5a729.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21169751859:android:e6b31014109040e16ea046",
+        "android_client_info": {
+          "package_name": "com.univer.public_transport_guide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21169751859-ne5jokomth2hssd58mdrvu4gkuc19eld.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.univer.public_transport_guide",
+            "certificate_hash": "c38399cb253aaefbe97c18585db794919f7221a2"
+          }
+        },
+        {
+          "client_id": "21169751859-dqm2gdoo34pr7pmj0b6plnhfiv1sb04v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOlbwE03xbbkGGsVD96onP7uWh51Nv5zw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21169751859-dqm2gdoo34pr7pmj0b6plnhfiv1sb04v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

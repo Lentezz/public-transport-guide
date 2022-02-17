@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/drawable/btn_register.xml" value="0.161" />
+        <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/drawable/btn_sign_in.xml" value="0.161" />
+        <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/layout/activity_map.xml" value="0.11775362318840579" />
+        <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/layout/activity_map2.xml" value="0.3625" />
+        <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/layout/register_window.xml" value="0.11775362318840579" />
+        <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/layout/sign_in_window.xml" value="0.11775362318840579" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
