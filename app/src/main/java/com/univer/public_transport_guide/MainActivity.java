@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showRegisterWindow(){
+
+       // registerLayout = findViewById(R.id.register_layout);
         AlertDialog.Builder dialog = new AlertDialog.Builder(this);
         dialog.setTitle("Register now");
         dialog.setMessage("Write all now");
@@ -82,12 +84,9 @@ public class MainActivity extends AppCompatActivity {
                         user.setName(name.getText().toString());
                         user.setPassword(password.getText().toString());
 
-                        users.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void unused) {
-                                startActivity(new Intent(MainActivity.this, MapActivity.class));
-                                finish();
-                            }
+                        users.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user).addOnSuccessListener(unused -> {
+                            startActivity(new Intent(MainActivity.this, MapActivity.class));
+                            finish();
                         });
 
                     });
@@ -97,6 +96,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showSignInWindow(){
+
+       // registerLayout = findViewById(R.id.sign_in_layout);
         AlertDialog.Builder dialog = new AlertDialog.Builder(this);
         dialog.setTitle("Sign now");
         dialog.setMessage("Write all now");
@@ -124,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                     .addOnSuccessListener(authResult -> {
                         startActivity(new Intent(MainActivity.this, MapActivity.class));
                         finish();
-                    }).addOnFailureListener(e -> Snackbar.make(registerLayout, "Error: " + e.getMessage(), BaseTransientBottomBar.LENGTH_SHORT).show());
+                    });
         });
         dialog.show();
     }
