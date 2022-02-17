@@ -1,4 +1,4 @@
-package com.univer.public_transport_guide;
+package com.univer.public_transport_guide.controller;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,13 +11,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.rengwuxian.materialedittext.MaterialEditText;
+import com.univer.public_transport_guide.R;
 import com.univer.public_transport_guide.model.User;
 
 
@@ -85,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                         user.setPassword(password.getText().toString());
 
                         users.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user).addOnSuccessListener(unused -> {
-                            startActivity(new Intent(MainActivity.this, MapActivity.class));
+                            startActivity(new Intent(MainActivity.this, UserActivity.class));
                             finish();
                         });
 
@@ -123,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
             }
             auth.signInWithEmailAndPassword(email.getText().toString(), password.getText().toString())
                     .addOnSuccessListener(authResult -> {
-                        startActivity(new Intent(MainActivity.this, MapActivity.class));
+                        startActivity(new Intent(MainActivity.this, UserActivity.class));
                         finish();
                     });
         });

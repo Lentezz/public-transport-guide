@@ -13,10 +13,10 @@
             android:name=".controller.AdminActivity"
             android:exported="false" />
         <activity
-            android:name=".MapActivity"
+            android:name=".controller.UserActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".controller.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

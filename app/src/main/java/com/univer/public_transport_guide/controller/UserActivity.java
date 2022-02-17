@@ -1,10 +1,12 @@
-package com.univer.public_transport_guide;
+package com.univer.public_transport_guide.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MapActivity extends AppCompatActivity {
+import com.univer.public_transport_guide.R;
+
+public class UserActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
