@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">public-transport-guide</string>
-    <string name="app_in_name">fucking programma</string>
-    <string name="app_in_name_after">Register app</string>
-    <string name="text_bottom">Log in to your account</string>
-    <string name="btnSignIn">СЕСТЬ</string>
-    <string name="btnRegister">ВЫЛЕТЕТЬ</string>
+    <string name="app_in_name">PUBLIC TRANSPORT GUIDE</string>
+    <string name="app_in_name_after">We know all the roads</string>
+    <string name="text_bottom">Sing in as gues</string>
+    <string name="btnSignIn">SIGN IN</string>
+    <string name="btnRegister">REGISTER</string>
+    <string name="btnSignGuest">SIGN IN AS GUEST</string>
 </resources>
