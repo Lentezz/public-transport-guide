@@ -3,16 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/drawable-v24/bg_window.xml" value="0.261" />
+        <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/drawable-v24/ic_clear.xml" value="0.261" />
+        <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/drawable-v24/ic_corner.xml" value="0.261" />
         <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/drawable/btn_add_route.xml" value="0.24" />
         <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/drawable/btn_add_stop.xml" value="0.24" />
         <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/drawable/btn_create_route.xml" value="0.24" />
         <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/drawable/btn_register.xml" value="0.161" />
         <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/drawable/btn_sign_in.xml" value="0.161" />
+        <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/font/open_sans.xml" value="0.3927083333333333" />
         <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/layout/activity_admin.xml" value="0.264" />
         <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/layout/activity_map.xml" value="0.11775362318840579" />
         <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/layout/activity_map2.xml" value="0.3625" />
-        <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/layout/register_window.xml" value="0.11775362318840579" />
+        <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/layout/custom_dialog_register.xml" value="0.2" />
+        <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/layout/register_window.xml" value="0.2" />
         <entry key="..\:/Users/Yaros/AndroidStudioProjects/publictransportguide/app/src/main/res/layout/sign_in_window.xml" value="0.11775362318840579" />
       </map>
     </option>

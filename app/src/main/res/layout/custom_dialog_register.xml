@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root_vg"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_corner"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:src="@drawable/ic_clear"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="2dp"
+            android:layout_alignParentRight="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:scrollbarThumbHorizontal="@color/black">
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/nameField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="20sp"
+
+                    app:met_baseColor="#00ffffff"
+                    app:met_errorColor="#0056d3"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="#00ffffff"
+                    app:met_singleLineEllipsis="true"
+
+                    />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/emailField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="20sp"
+
+                    app:met_baseColor="@color/colorWhite"
+                    app:met_errorColor="#0056d3"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/colorWhite"
+
+                    app:met_singleLineEllipsis="true"
+
+                    />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/passField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="20sp"
+
+                    app:met_baseColor="@color/colorWhite"
+                    app:met_errorColor="#0056d3"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/colorWhite"
+
+                    app:met_singleLineEllipsis="true"
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+
+                android:gravity="center_horizontal"
+
+
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_no"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#858383"
+
+                    android:text="Cancel"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btn_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="30dp"
+
+                    android:backgroundTint="#858383"
+                    android:text="Register"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
