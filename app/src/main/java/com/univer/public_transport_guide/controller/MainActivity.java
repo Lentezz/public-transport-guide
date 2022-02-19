@@ -22,6 +22,9 @@ import com.rengwuxian.materialedittext.MaterialEditText;
 import com.univer.public_transport_guide.R;
 import com.univer.public_transport_guide.model.User;
 
+import java.io.IOException;
+import java.util.Objects;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -77,7 +80,18 @@ public class MainActivity extends AppCompatActivity {
         btnAdd.setOnClickListener(new MaterialButton.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(TextUtils.isEmpty(Objects.requireNonNull(name.getText()).toString())){
+                    Snackbar.make(registerWindow, "ERROR name", Snackbar.LENGTH_LONG).show();
+                    return;
+                }
+                if(TextUtils.isEmpty(Objects.requireNonNull(email.getText()).toString())){
+                    Snackbar.make(registerWindow, "ERROR email", Snackbar.LENGTH_LONG).show();
+                    return;
+                }
+                if(Objects.requireNonNull(password.getText()).toString().length() < 6){
+                    Snackbar.make(registerWindow, "ERROR password", Snackbar.LENGTH_LONG).show();
+                    return;
+                }
                 auth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString())
                         .addOnSuccessListener(authResult -> {
                             User user = new User();
@@ -85,11 +99,11 @@ public class MainActivity extends AppCompatActivity {
                             user.setName(name.getText().toString());
                             user.setPassword(password.getText().toString());
 
-                            users.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user).addOnSuccessListener(unused -> {
-                                startActivity(new Intent(MainActivity.this, UserActivity.class));
-                                finish();
-                            });
-
+                            users.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user)
+                                    .addOnSuccessListener(unused -> {
+                                        startActivity(new Intent(MainActivity.this, UserActivity.class));
+                                        finish();
+                                    });
                         });
             }
         });
